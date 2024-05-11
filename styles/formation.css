@@ -1,0 +1,285 @@
+@font-face {
+    font-family: "Exo";
+    src: url(../font/Exo/Exo-Italic-VariableFont_wght.ttf);
+    font-weight: normal;
+}
+
+*{
+    font-family: "Exo";
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+}
+
+h2, h3{
+    text-align: center;
+    margin: 20px 0;
+}
+
+main{
+    padding: 40px;
+}
+
+.wrapper{
+    width: 70%;
+    margin: 0 auto;
+}
+
+/*---------------------------------------------barre de navigation-----------------------------------------*/
+
+.active{
+    color: #853a08;
+}
+
+nav img{
+    margin-left: 15px;
+}
+
+.point_orange{
+    color: #552506;
+}
+
+#logo{
+    float: left;
+    height: 90px;
+    margin-top: 30px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    padding-bottom: 15px;
+    align-content: center;
+    background-color: #c69d82;
+    border-bottom: 4px solid black;
+    z-index: 1;
+    font-size: calc(0.5rem + 0.9vw);
+}
+
+nav ul{
+    float: right;
+    color: #020308;
+    margin: 40px 0;
+    text-transform: uppercase;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav ul li a{
+    color: #020308;
+    transition: 1s;
+}
+
+nav ul li a:hover{
+    color: #552506;
+    transition: 1s;
+}
+
+h1{
+    display: inline-block;
+    font-size: 20px;
+    color: #000000;
+}
+
+.inscription{
+    padding: 10px 20px;
+    font-weight: bold;
+    background: #c69d82;
+    border: 2px solid black;
+    border-radius: 1rem;
+    transition: .5s;
+}
+
+.inscription:hover{
+    background-color: black;
+    color: #fdfdfd;
+    transition: .5s;
+}
+
+nav::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #652c06;
+    z-index: -1;
+    transition: .5s;
+}
+
+nav:hover:before {
+    width: 100%;
+}
+/*------------------------------------------------slogan et entete---------------------------------*/
+
+main{
+    background-image: url("../images/formation.jpg");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    text-align: center;
+}
+
+.button{
+    display: block;
+    height: 40px;
+    width: 150px;
+    margin: 200px auto 0 auto;
+    background-color: #B3D7EF;
+    border-radius: 1rem;
+    transition: 1s;
+}
+
+.button:hover{
+    color: #fdfdfd;
+    transition: 1s;
+}
+
+.marron{
+    color: #853a08;
+}
+
+#slogan p{
+    color: #FFF;
+}
+
+/* -------------------------------------LE corps ------------------------------------ */
+#lesson1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#lesson1>div {
+    background-color: rgb(179, 57, 0);
+    border: 2px solid black;
+    border-radius: 1rem;
+    height: 510px;
+    width: 350px;
+    transition: 1s;
+    margin-top: 3rem;
+}
+
+
+#EMP{
+    display: flex;
+    background-image: url(../images/singed.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    align-items: end;
+    justify-content: center;
+}
+
+.text{
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.text p, .text h2{
+    color: white;
+}
+
+#CMB{
+    background-image: url(../images/zed.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+#ASS{
+    background-image: url(../images/talon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+ }
+
+#ASS,
+#CMB,
+#EMP{
+    width: 100%;
+    border-radius: 1rem;
+    color: #FFF;
+}
+
+#ASS:hover,
+#CMB:hover ,
+#EMP:hover{
+    transform: scale(1.05);
+    transition: 0.6s;
+}
+
+#ASS:hover .text,
+#CMB:hover .text,
+#EMP:hover .text{
+    background-color: rgb(0, 0, 0);
+    opacity: 1;
+}
+
+
+
+/* -------------------------------------pied de page----------------------------------- */
+
+footer{
+    background-color: #000000;
+    padding: 50px 0;
+}
+
+.membre{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.membre div{
+    background-color: #c69d82;
+    border-radius: 1rem;
+    margin: 0 30px;
+    padding: 30px 0;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.membre div p{
+    width: 70%;
+}
+
+details{
+    display: none;
+}
+
+@media screen and (max-width:1150px){
+    nav ul{
+        display: none;
+    } 
+
+    details{
+        display: flex;
+        float: right;
+        margin: 45px 0;
+    }
+
+    details div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="icon" href="./images/image_logo.png">
+    <title> SHADOWBLADE ACADEMY </title>
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div id="logo">
+                <a href="./accueil.html"> <h1>SHADOWBLADE <span class="point_orange"><br>ACADEMY</span></h1></a>
+            </div>
+            <a href="./accueil.html"><img src="./images/image_logo.png" alt="image logo"></a>
+            <details>
+                <summary>
+                    MENU
+                </summary>
+                <div>
+                    <a href="./accueil.html" class="active"> ACCUEIL </a>
+                    <a href="./formation.html"> FORMATION </a>
+                    <a href="./contact.html"> CONTACT </a>
+                    <a href="./contact.html">SIGN UP</a>
+                </div>
+            </details>
+            <ul>
+                <li><a href="./accueil.html"> Accueil </a></li>
+                <li><a href="./formation.html"> Formation </a></li>
+                <li><a href="./contact.html" class="active"> Contact </a></li>
+                <li ><a class="inscription" href="./contact.html">SIGN UP</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="wrapper-sign">
+            <form action="#">
+                <h2>LOGIN</h2>
+                <div class="input-box">
+                    <label for="u-nom">Nom&Prenom</label>
+                    <input id="u-nom" type="text" placeholder="Nom_Prenom" required>
+                </div>
+                <div class="input-box">
+                    <label for="u-email">Email</label>
+                    <input id="u-email" type="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <label for="u-formation">Formation</label>
+                    <input id="u-formation" type="text" placeholder="Formation" list="form">
+                </div>
+                <div class="input-box">
+                    <label for="u-message">Message</label>
+                    <input id="u-message" type="text" placeholder="Message">
+                </div>
+                <div class="btn">
+                    <button type="submit" class="btn-sign">SIGN-UP</button>                     
+                </div>
+            </form>
+            <datalist id="form">
+                <option value="Assassin solo"></option>
+                <option value="Assassin sniper"></option>
+                <option value="Empoisonneur"></option>
+                <option value="Infiltrateur"></option>
+                <option value="Combattant"></option>
+            </datalist>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h3>NOS CONTACTS</h3>
+            <p>shadowblade_123@gassassin-school.com</p>
+            <p>Telephone: 077 13874536</p>
+        </section>
+        
+        <iframe src="https://my.atlist.com/map/318d815b-a04d-45eb-9673-535a2d5cef25?share=true" allow="geolocation 'self' https://my.atlist.com" loading="lazy" allowfullscreen></iframe>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <section class="membre">
+                <div>
+                    <h4> ZOH KESSE JASON</h4>
+                    <p> Chargé de la presentation de la page web et du code</p>
+                </div>
+                <div>
+                    <h4> OUSSAMA BOUZIDI</h4>
+                    <p> Chargé des idées de style et constitue le point de vue critique</p>
+                </div>
+            </section>
+        </div>
+    </footer>

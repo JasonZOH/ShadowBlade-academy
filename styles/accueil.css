@@ -1,0 +1,263 @@
+/*--------------------------------------------Page principale----------------------------------------*/
+@font-face {
+    font-family: "Exo";
+    src: url(../font/Exo/Exo-Italic-VariableFont_wght.ttf);
+    font-weight: normal;
+}
+
+*{
+    font-family:"Exo";
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #020308;
+}
+
+h2, h3{
+    text-align: center;
+    margin: 20px 0;
+}
+
+main{
+    padding: 40px;
+}
+
+.wrapper{
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+/*---------------------------------------------barre de navigation-----------------------------------------*/
+
+.active{
+    color: #fc4747;
+}
+
+details{
+    display: none;
+}
+
+nav img{
+    margin-left: 15px;
+}
+
+.rouge{
+    color: #fc4747;
+}
+
+.slogan_marron{
+    color: #fc4747;
+}
+
+#logo{
+    float: left;
+    height: 90px;
+    margin-top: 30px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    padding-bottom: 15px;
+    align-content: center;
+    background-color: #5A6064;
+    border-bottom: 4px solid black;
+    font-weight: bold;
+    z-index: 1;
+    font-size: calc(0.5rem + 0.9vw);
+}
+
+nav ul{
+    float: right;
+    color: #020308;
+    margin: 40px 0;
+    text-transform: uppercase;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    color: #020308;
+    transition: 1s;
+}
+
+nav ul li a:hover{
+    color: #fc4747;
+    transition: 1s;
+}
+
+h1{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.inscription{
+    padding: 10px 20px;
+    font-weight: bold;
+    background: #fc4747;
+    border: 2px solid black;
+    border-radius: 1rem;
+    transition: .5s;
+}
+
+.inscription:hover{
+    background-color: black;
+    color: #fdfdfd;
+    transition: .5s;
+}
+
+nav::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #9e9d9d;
+    z-index: -1;
+    transition: .5s;
+}
+
+nav:hover:before {
+    width: 100%;
+}
+
+/*------------------------------------------------slogan et entete---------------------------------*/
+
+header{
+    position: relative;
+    background-image: url("../images/ac.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20vw;
+    padding-bottom: 12vw;
+    text-align: center;
+}
+
+#slogan{
+    line-height: 45px;
+    position: relative;
+    font-size: 30px;
+    bottom: 100px;
+}
+
+#slogan p{
+    color: #FFF;
+}
+
+/* -------------------------------------LE corps ------------------------------------ */
+#matière{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+}
+
+#Formation{
+    display: flex;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+#Formation div p{
+    background-color: gray;
+    border: 2px solid black;
+    border-radius: 1rem;
+    margin: 20px 10px 10px 10px ;
+    padding: 10px 10px 0 10px;
+    height: 55px;
+    transition: 1s;
+}
+
+#Formation div p:hover{
+    transform: scale(1.3);
+    transition: 1s;
+}
+
+#matière div p{
+    background-color: gray;
+    border: 2px solid black;
+    border-radius: 1rem;
+    margin: 20px 10px 10px 10px ;
+    padding: 10px 10px 0 10px;
+    height: 55px;
+    transition: 1s;
+}
+
+#matière div p:hover{
+    transform: scale(1.3);
+    transition: 1s;
+}
+
+/* -------------------------------------pied de page----------------------------------- */
+
+#rapport{
+    display: flex;
+    justify-content: space-around;
+    color: #FFF;
+    margin: 15px 0;
+}
+
+#rapport a{
+    color: #FFF;
+    background-color: #5A6064;
+    padding: 5px 10px;
+    border-radius: 1rem;
+}
+
+footer{
+    background-color: #000000;
+    padding: 50px 0;
+}
+
+.membre{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.membre div{
+    background-color: #6c8291;
+    border-radius: 1rem;
+    margin: 0 30px;
+    padding: 30px 0;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.membre div p{
+    width: 70%;
+}
+
+@media screen and (max-width:821px){
+    #matière{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:1150px){
+    nav ul{
+        display: none;
+    } 
+
+    details{
+        display: flex;
+        float: right;
+        margin: 45px 0;
+    }
+
+    details div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
